@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-foreach (var e in Take(25, SquaresOf(Integers())))
+foreach (int e in Take(25, SquaresOf(Integers())))
 {
   Console.WriteLine(e);
 }
