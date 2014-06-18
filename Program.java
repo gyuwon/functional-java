@@ -2,7 +2,7 @@ import java.util.Iterator;
 
 public final class Program {
   public static void main(String... args) {
-    for (Integer e : take(25, squaresOf(integer()))) {
+    for (Integer e : take(25, squaresOf(integers()))) {
       System.out.println(e);
     }
   }
@@ -43,7 +43,7 @@ public final class Program {
     };
   }
 
-  public static Iterable<Integer> integer() {
+  public static Iterable<Integer> integers() {
     return new Iterable<Integer>() {
       public Iterator<Integer> iterator() {
         return new Iterator<Integer>() {
