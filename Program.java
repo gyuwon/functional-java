@@ -7,7 +7,7 @@ public final class Program {
     }
   }
 
-  public static Iterable<Integer> take(int count, Iterable<Integer> source) {
+  public static Iterable<Integer> take(final int count, Iterable<Integer> source) {
     return new Iterable<Integer>() {
       public Iterator<Integer> iterator() {
         return new Iterator<Integer>() {
